@@ -4,7 +4,7 @@
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ruhulwebdev/create-react-app.git",
+    "url": "https://github.com/ruhulwebdev/react-scripts-with-useful-features.git",
     "directory": "packages/react-scripts"
   },
   "license": "MIT",
@@ -12,7 +12,7 @@
     "node": ">=8.10"
   },
   "bugs": {
-    "url": "https://github.com/ruhulwebdev/create-react-app/issues"
+    "url": "https://github.com/ruhulwebdev/react-scripts-with-useful-features/issues"
   },
   "files": [
     "bin",
