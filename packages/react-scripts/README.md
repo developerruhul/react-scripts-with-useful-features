@@ -10,6 +10,8 @@ This is a fork of react-scripts v3.0.1. This fork has these additional useful fe
 - 🎍Out of the box mobx decorators
 - 👾 Out of the box chrome extension support
 - 🌈 Better styled-components support via **babel-plugin-styled-components**
+- ⛅ babel config support so you can add as many plugins as you want
+- 🤯 integration with .eslintrc so any linting error is a compile error
 
 ## To use it all you need to do is
 
