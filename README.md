@@ -11,6 +11,14 @@ This is a fork of react-scripts v3.0.1. This fork has these additional useful fe
 - 👾 Out of the box chrome extension support
 - 🌈 Better styled-components support via **babel-plugin-styled-components**
 
+## To use it all you need to do is
+
+```
+create-react-app my-app --scripts-version react-scripts-with-useful-features
+```
+
+And then bang 🤯 you get all these features in addition to the fantastic **Create react app**.
+
 ## To build for chrome -
 
 - Add a `CLIENT_ENV="chrome"` to your `.env` file so react-scripts knows that you wanna build for chrome.
