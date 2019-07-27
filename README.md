@@ -1,10 +1,15 @@
 # react scripts with useful features
 
-This is a fork of react-scripts v3.0.1. This fork has these additional useful features in addition to the fantastic create-react-app features.
+This is a fork of react-scripts v3.0.1. This fork has these additional useful features in addition to the original create-react-app features. So no need to worry about stability.
 
-- Out of the box mobx decorators
-- Out of the box chrome extension chrome support
-- Better styled-components support via **babel-plugin-styled-components**
+## Features
+
+- ⚛️ Create React App 3 (React 16.8)
+- 📮 Out of the box monorepo and yarn workspaces support. You have to follow [these small steps](https://github.com/react-workspaces/react-workspaces-playground/blob/master/README.md) to use it.
+- ✨ Host Multiple CRA Apps, Component Libraries in one Monorepo
+- 🎍Out of the box mobx decorators
+- 👾 Out of the box chrome extension support
+- 🌈 Better styled-components support via **babel-plugin-styled-components**
 
 ## To build for chrome -
 
