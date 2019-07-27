@@ -63,8 +63,8 @@ const sassModuleRegex = /\.module\.(scss|sass)$/;
 // custom configs
 /////////////////////////////////////////////////
 // conditional hash with names
-// const isEnvChrome = process.env.CLIENT_ENV === 'chrome';
-const __fileName__ = '[name].[contenthash:8]';
+const isEnvChrome = process.env.CLIENT_ENV === 'chrome';
+const __fileName__ = isEnvChrome ? '[name]' : '[name].[contenthash:8]';
 
 // const chromeEntry = () => {
 //   const appDirectory = fs.realpathSync(process.cwd());
@@ -180,7 +180,8 @@ module.exports = function(webpackEnv) {
       isEnvDevelopment &&
         require.resolve('react-dev-utils/webpackHotDevClient'),
       // Finally, this is your app's code:
-      paths.appIndexJs,
+      !isEnvChrome ? paths.appIndexJs : isEnvDevelopment && paths.appIndexJs,
+      isEnvProduction && isEnvChrome && './src/content.js',
       // We include the app code last so that if there is a runtime error during
       // initialization, it doesn't blow up the WebpackDevServer client, and
       // changing JS code would still trigger a refresh.
@@ -288,7 +289,7 @@ module.exports = function(webpackEnv) {
       },
       // Keep the runtime chunk separated to enable long term caching
       // https://twitter.com/wSokra/status/969679223278505985
-      runtimeChunk: true,
+      runtimeChunk: !isEnvChrome,
     },
     resolve: {
       // This allows you to set a fallback for where Webpack should look for modules.
